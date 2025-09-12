@@ -33,9 +33,6 @@ display: grid -> declara como grid
     - Example below
         - 1fr 1fr 1fr 1fr
         - Four rows
-- You can use the justify-content proprieties para mexer horizontalmente
-- You can use the align-content proprieties para mexer verticalmente
-- place-content -> is a placeholder for align and justify content
     - Example below
         - space-around space-evenly
 ###### Grid item
@@ -44,4 +41,8 @@ display: grid -> declara como grid
         - 1 / 2 / 3 / 2
         - start on row-line 1 and column-line 2, and end on row-line 3 and column line 2
 - grid-area can also receive an nickname
-- justify-self and align-self permite alinhar o conteudo dentro do grid item
+###### justify and align
+- You can use the **justify-content** proprieties para mexer horizontalmente
+- You can use the **align-content** proprieties para mexer verticalmente
+- **place-content** -> is a placeholder for align and justify content
+- **justify-self** and **align-self** permite alinhar o conteudo dentro do grid item

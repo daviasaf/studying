@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --branco: white;
+  --preto: black;
+  --verdeFloresta: #214d04;
+  --verdeMusgo: #38641a;
+  --verdeSelva: #4f7b31;
+  --verdeAlecrim: #669247;
+  --verdeSalvia: #7da95d;
+  --vermelhoPimenta: #a81100;
+  --vermelhoTerracota: #be2606;
+  --laranjaGengibre: #d43b0c;
+  --laranjaFogo: #e95011;
+  --laranjaCitrico: #ff6517;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1rem;
+}
+.background-color-verde-musgo {
+  background-color: var(--verdeMusgo);
+}
+.background-color-verde-floresta {
+  background-color: var(--verdeFloresta);
+}
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--preto);
+  color: var(--branco);
+  width: 100%;
+  height: 100vh;
+}
+#page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  /* Filhos */
+  header {
+    background-color: var(--verdeFloresta);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--verdeAlecrim);
+    /* Filhos */
+    .navegador-suspenso {
+      img {
+        width: 30px;
+      }
+    }
+    .navegador-links {
+      display: none;
+    }
+  }
+  main {
+    .bloco-foto {
+      padding: 100% 0 10% 0;
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.478),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url(./img/monkeysphotos/macaco-portrait.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      h1 {
+        text-align: center;
+      }
+    }
+    .bloco-conheca {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      div {
+        width: 340px;
+        background-color: var(--verdeSalvia);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+    }
+    .bloco-rede-social {
+      padding: 20px;
+      div {
+        display: flex;
+        flex-flow: column;
+        img {
+          width: 20px;
+        }
+        a {
+          width: 120px;
+          margin: 10px;
+          text-decoration: none;
+          color: var(--branco);
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    
+  }
+  footer {
+      p {
+        padding: 50px 0;
+      }
+    }
+}
+/* 360px 
+h1 1.5 rem
+h2  1.2 rem
+p 1 rem
+*/
+/* 480
+h1 2rem
+h2 1.5rem
+p 1rem 
+*/
+/*768
+h1 2.5rem 
+ 
+ */

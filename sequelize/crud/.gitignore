@@ -1,0 +1,5 @@
+# Arquivos de dependências
+node_modules/
+
+# Arquivos de variáveis de ambiente
+.env

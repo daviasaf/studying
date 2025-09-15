@@ -38,7 +38,7 @@ async function updateClient(req, res) {
     },
     {
       where: {
-        id: req.params.is,
+        id: req.params.id,
       },
     }
   );

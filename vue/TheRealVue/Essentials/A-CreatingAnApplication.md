@@ -10,3 +10,21 @@ npm create vue@latest
     - const app1 = createApp({}).mount("container-1")
     - const app2 = createApp({}).mount("container-2")
     - etc...
+
+```html
+
+    <div id="app">
+      <button @click="count++">{{ count }}</button>
+    </div>
+    <script type="module">
+      import { createApp } from "vue";
+      const app = createApp({
+        data() {
+          return {
+            count: 0,
+          };
+        },
+      }).mount("#app");
+    </script>
+
+```

@@ -16,4 +16,4 @@
 - Directives
     - São atributos especiais do vue
     - Lembre de passar single JS expressions
-    ![syntax explanation](image.png)
+    ![syntax explanation](img/image.png)

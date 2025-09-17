@@ -1,18 +1,16 @@
 <template>
- 
-  <RegisterForm></RegisterForm>
+  <Header></Header>
+  <Main>
+    <RegisterForm></RegisterForm>
+  </Main>
+  <Footer></Footer>
 </template>
 
-<script>
-import RegisterForm from "@/components/RegisterForm.vue";
-
-export default {
-  components: {
-    RegisterForm,
-  },
-};
+<script setup>
+import RegisterForm from "@/components/auth/RegisterForm.vue";
+import Header from "@/components/layout/Header.vue";
+import Main from "@/components/layout/Main.vue";
+import Footer from "@/components/layout/Footer.vue";
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

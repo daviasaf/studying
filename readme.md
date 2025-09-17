@@ -4,3 +4,5 @@
     - Sequelize
     - Vue
     - Projetos 
+- Para estudar
+    - LangChain

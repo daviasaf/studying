@@ -1,6 +1,7 @@
 <template>
   <footer>
     <p>Feito por Davi Asaf</p>
+    <slot></slot>
   </footer>
 </template>
 

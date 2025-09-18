@@ -43,6 +43,14 @@ v-slot:[nomeReativo] #[nomeReativo]
     </template>
 
 </Cards>
+```
+<template>
+<slot #header :mensagem='mensagem' ></slot>
+</template>
+<script setup>
+    import { ref } from 'vue';
+    let mensagem = ref("Oi")
+</script>
 ``` 
 
 - ou seja, vc ta passando os dados aqui, mas ele vai ser acessado só la

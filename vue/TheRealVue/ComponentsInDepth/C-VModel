@@ -1,0 +1,41 @@
+- um pai pode se conectar ao filho com v-model
+- utilize defineModel() no filho para se conectar ao pai
+- dados bidimensional é quando o pai manda um dado pro filho e ele altera, alterando o valor do pai também
+```html
+<!-- Pai -->
+ <script setup>
+import Child from './Child.vue';
+import { ref } from 'vue';
+const msg = ref("Olá")
+
+</script>
+
+<template>
+  <h1> {{msg}} </h1>
+  <Child v-model="msg" ></Child>
+</template>
+```
+```html
+<!--Filho-->
+<script setup>
+const model = defineModel()
+</script>
+
+<template>
+  <h2> {{model}} </h2>
+  <input type="text" v-model="model" ></input>
+</template>
+```
+- Resultado
+![alt text](image.png)
+- no recebimento do defineModel, pode colocar tanto required quanto default, como uma prop
+
+- você pode passar atributos com v-model para o filho também, basta fazer
+    - Pai
+        - v-model:title="Titulo"
+    - Filho
+        - const title = defineModel("title")
+- para pegar quando metodo está usando, utilize desestruturação no defineModel
+    - const \[model,metodo] = defineModel()
+- estudar sobre criar metodos com v-model
+    - set

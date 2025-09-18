@@ -1,0 +1,9 @@
+- Os atributos passam de pai pra filho
+- Se você não quer que o filho receba tal atributo, configure-o com inheritAttrs: false dentro de defineOptions, DefineOptions pode ser escrito diretamente no script
+- Para você escolher qual atributo vai cair em qual filho, utilize a espessão $attrs no elemento que você quer o atributo
+- para$ escolher elementos especificos, voce tem que dizer ao attrs qual voce quer, assim
+    - $attrs.onClick
+    - $attrs['nav']
+- mas caso você queria todos os elementos, utilize ele com v-bind sem nenhum argumento
+    - v-bind="$attrs"
+- se você quer acessar os atributos de fallthrough, pode usar a API useAttrs() e salvar em uma variavel

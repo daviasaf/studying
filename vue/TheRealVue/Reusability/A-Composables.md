@@ -1,0 +1,4 @@
+- As vezes precisaremos usar a mesma lógica, para isso, usaremos composables
+- são arquivos externos js que só carregam a lógica, eles usam export function (nomedafunção) e retorna apenas a lógica dela
+    - por convenio, o nome dessa função tem que começar com USE
+- quando voce for usar fetch, lembre de fazer uma função que facilita

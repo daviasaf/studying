@@ -1,0 +1,19 @@
+- use o atributo ref="" para conectar em uma tag html, como um getElementById
+- para pegar ela, utilize useTemplateRef no compositionAPI
+```html
+<script setup>
+import {  onMounted ,useTemplateRef } from 'vue'
+
+  const myInput = useTemplateRef('my-input')
+
+  onMounted(()=>{
+    myInput.value.focus()
+  })
+</script>
+
+<template>
+  <input  ref="my-input" type="text"></input>
+</template>
+```
+- você pode pegar o valor do array em um V-for usando refs tbm
+- functions refs ?

@@ -4,7 +4,7 @@
 
 <template>
   <header
-    class="bg-sky-200 flex justify-between items-center px-6 py-4 overflow-x-hidden"
+    class="bg-teal-200 flex justify-between items-center px-6 py-4 overflow-x-hidden"
   >
     <h1 class="text-xl">My Tasks</h1>
     <p class="sm:hidden">Menu</p>

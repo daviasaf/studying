@@ -62,7 +62,7 @@ function limparInputs() {
       <!-- Área de escrever as tarefas -->
       <form
         @submit.prevent="enviarDados"
-        class="grid grid-rows-4 gap-1 max-w-md transition bg-blue-500 p-2 mb-3 mx-auto"
+        class="grid grid-rows-4 gap-1.5 max-w-md  bg-gray-100 border-2 border-green-200 rounded p-5 mb-3 mx-auto"
       >
         <p class="text-center">Escreva sua tarefa</p>
         <input
@@ -70,7 +70,7 @@ function limparInputs() {
           name="userTaskName"
           maxlength="40"
           v-model="userTaskName"
-          class="hover:bg-red-200 text-center outline-0 rounded"
+          class="hover:bg-gray-200 focus:bg-gray-200 text-center outline-0 rounded py-1.5 transition "
         />
         <input
           type="text"
@@ -78,11 +78,11 @@ function limparInputs() {
           maxlength="40"
           ref="inpu"
           v-model="userTaskDesc"
-          class="hover:bg-red-200 text-center outline-0 rounded"
+          class=" hover:bg-gray-200 focus:bg-gray-200 text-center outline-0 rounded py-1.5 px-5 transition"
         />
         <button
           type="submit"
-          class="bg-red-200 hover:bg-red-300 rounded text-center w-full"
+          class="bg-green-200 hover:bg-green-300 rounded text-center w-full transition"
         >
           Enviar
         </button>

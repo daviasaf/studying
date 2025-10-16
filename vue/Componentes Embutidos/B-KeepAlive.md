@@ -1,0 +1,5 @@
+- Use o build-it component KeepAlive com a sintaxe de trocar componentes
+    - <\components><\/components>
+- Quando voce colocar o keepalive em volta dele, ele vai manter os registros dos dados dele salvo
+- Include / Exclude
+    - Pesquisa dps pq nao entendi nada na documentação

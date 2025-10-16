@@ -1,0 +1,59 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "id": "e7f6a1b0-0fa4-415b-ad02-1edc99f76c98",
+  "prevId": "4dfcfb5c-8534-4875-9191-b4260df04e4f",
+  "tables": {
+    "tabela_usuarios": {
+      "name": "tabela_usuarios",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "nome": {
+          "name": "nome",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "idade": {
+          "name": "idade",
+          "type": "int",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "tabela_usuarios_id": {
+          "name": "tabela_usuarios_id",
+          "columns": [
+            "id"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraint": {}
+    }
+  },
+  "views": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {
+      "\"tabela_usuarios\".\"name\"": "\"tabela_usuarios\".\"nome\"",
+      "\"tabela_usuarios\".\"age\"": "\"tabela_usuarios\".\"idade\""
+    }
+  },
+  "internal": {
+    "tables": {},
+    "indexes": {}
+  }
+}
